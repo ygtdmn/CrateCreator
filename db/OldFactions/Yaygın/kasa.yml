@@ -1,0 +1,738 @@
+Crate:
+  CrateType: CSGO
+  CrateName: '&4&l➸ &0Yaygın Kasa'
+  Preview-Name: '&4&l➸ &0Yaygın Kasa'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 13
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&6&l%Player% &7bir &7&lYaygın Kasa&7 açıyor.'
+  Item: CHEST
+  Glowing: false
+  Name: '&3&lYaygın Kasa'
+  Lore:
+  - '&7Yaygın Kasa değerli eşyalar barındırır ancak'
+  - '&7şansları nadir ve efsanevi kasaya göre daha düşüktür.'
+  - '&7Şansınıza güveniyorsanız bu kasa size göre!'
+  - ''
+  - '&aSahip Olduğunuz Kasa: &f%Keys%'
+  - ' '
+  - '&7(&e!&7) Kasayı açmak için Sol Tıkla!'
+  - '&7(&e!&7) Ödülleri görmek için Sağ Tıkla!'
+  PhysicalKey:
+    Name: '&aYaygın Kasa'
+    Item: TRIPWIRE_HOOK
+  Prizes:
+    '1':
+      DisplayName: '&7Zombi Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% zombie 1
+      Items: []
+      Messages: '&7Zombi Spawner &akazandınız!'
+    '2':
+      DisplayName: '&7İskelet Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% skeleton 1
+      Items: []
+      Messages: '&7İskelet Spawner &akazandınız!'
+    '3':
+      DisplayName: '&7Örümcek Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% spider 1
+      Items: []
+      Messages: '&7Örümcek Spawner &akazandınız!'
+    '4':
+      DisplayName: '&7Domuz Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% pig 1
+      Items: []
+      Messages: '&7Domuz Spawner &akazandınız!'
+    '5':
+      DisplayName: '&7İnek Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% cow 1
+      Items: []
+      Messages: '&7İnek Spawner &akazandınız!'
+    '6':
+      DisplayName: '&7Tavuk Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% chicken 1
+      Items: []
+      Messages: '&7Tavuk Spawner &akazandınız!'
+    '7':
+      DisplayName: '&7Koyun Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% sheep 1
+      Items: []
+      Messages: '&7Koyun Spawner &akazandınız!'
+    '8':
+      DisplayName: '&7Mööntar Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% mushroomcow 1
+      Items: []
+      Messages: '&7Mööntar Spawner &akazandınız!'
+    '9':
+      DisplayName: '&7Creeper Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% creeper 1
+      Items: []
+      Messages: '&7Creeper Spawner &akazandınız!'
+    '10':
+      DisplayName: '&7Rejenerasyon İksiri'
+      DisplayItem: POTION
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:POTION:8257, Amount:1
+      Messages: '&7Rejenerasyon İksiri &akazandınız!'
+    '11':
+      DisplayName: '&7Hız İksiri'
+      DisplayItem: POTION
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:POTION:8226, Amount:1
+      Messages: '&7Hız İksiri &akazandınız!'
+    '12':
+      DisplayName: '&7Patlayıcı Zehir İksiri'
+      DisplayItem: POTION
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:POTION:16420, Amount:1
+      Messages: '&7Patlayıcı Zehir İksiri &akazandınız!'
+    '13':
+      DisplayName: '&7Anında İyileştirme İksiri'
+      DisplayItem: POTION
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:POTION:8229, Amount:1
+      Messages: '&7Anında İyileştirme İksiri &akazandınız!'
+    '14':
+      DisplayName: '&7Gece Görüşü İksiri'
+      DisplayItem: POTION
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:POTION:8262, Amount:1
+      Messages: '&7Gece Görüşü İksiri &akazandınız!'
+    '15':
+      DisplayName: '&7Güç İksiri'
+      DisplayItem: POTION
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:POTION:8233, Amount:1
+      Messages: '&7Güç İksiri &akazandınız!'
+    '16':
+      DisplayName: '&7Patlayıcı Zarar İksiri'
+      DisplayItem: POTION
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:POTION:16428, Amount:1
+      Messages: '&7Patlayıcı Zarar İksiri &akazandınız!'
+    '17':
+      DisplayName: '&7Su Altında Nefes Alma İksiri'
+      DisplayItem: POTION
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:POTION:8269, Amount:1
+      Messages: '&7Su Altında Nefes Alma İksiri &akazandınız!'
+    '18':
+      DisplayName: '&7Koruma 4 Büyü Kitabı'
+      DisplayItem: ENCHANTED_BOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Commands:
+      - give %Player% ENCHANTED_BOOK 1 PROTECTION:4
+      Messages: '&7Koruma 4 Büyü Kitabı &akazandınız!'
+    '19':
+      DisplayName: '&7Keskinlik 5 Büyü Kitabı'
+      DisplayItem: ENCHANTED_BOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Commands:
+      - give %Player% ENCHANTED_BOOK 1 SHARPNESS:5
+      Messages: '&7Keskinlik 5 Büyü Kitabı &akazandınız!'
+    '20':
+      DisplayName: '&7Dikenler 3 Büyü Kitabı'
+      DisplayItem: ENCHANTED_BOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Commands:
+      - give %Player% ENCHANTED_BOOK 1 THORNS:3
+      Messages: '&7Dikenler 3 Büyü Kitabı &akazandınız!'
+    '21':
+      DisplayName: '&7Darbe 5 Büyü Kitabı'
+      DisplayItem: ENCHANTED_BOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Commands:
+      - give %Player% ENCHANTED_BOOK 1 DAMAGE_UNDEAD:5
+      Messages: '&7Darbe 5 Büyü Kitabı &akazandınız!'
+    '22':
+      DisplayName: '&7Kırılmazlık 3 Büyü Kitabı'
+      DisplayItem: ENCHANTED_BOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Commands:
+      - give %Player% ENCHANTED_BOOK 1 DURABILITY:3
+      Messages: '&7Kırılmazlık 3 Büyü Kitabı &akazandınız!'
+    '23':
+      DisplayName: '&7Savurma 2 Büyü Kitabı'
+      DisplayItem: ENCHANTED_BOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Commands:
+      - give %Player% ENCHANTED_BOOK 1 KNOCKBACK:2
+      Messages: '&7Savurma 2 Büyü Kitabı &akazandınız!'
+    '24':
+      DisplayName: '&7Ganimet 3 Büyü Kitabı'
+      DisplayItem: ENCHANTED_BOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Commands:
+      - give %Player% ENCHANTED_BOOK 1 LOOT_BONUS_MOBS:3
+      Messages: '&7Ganimet 3 Büyü Kitabı &akazandınız!'
+    '25':
+      DisplayName: '&7Verimlilik 5 Büyü Kitabı'
+      DisplayItem: ENCHANTED_BOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Commands:
+      - give %Player% ENCHANTED_BOOK 1 EFFICIENCY:5
+      Messages: '&7Verimlilik 5 Büyü Kitabı &akazandınız!'
+    '26':
+      DisplayName: '&7Servet 3 Büyü Kitabı'
+      DisplayItem: ENCHANTED_BOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1153
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Items: []
+      Commands:
+      - give %Player% ENCHANTED_BOOK 1 LOOT_BONUS_BLOCKS:3
+      Messages: '&7Servet 3 Büyü Kitabı &akazandınız!'
+    '27':
+      DisplayName: '&7Büyülü Kazma (V5,K3,S3)'
+      Lore:
+      - '&7Verimlilik V'
+      - '&7Kırılmazlık III'
+      - '&7Servet III'
+      DisplayItem: DIAMOND_PICKAXE
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4250
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:DIAMOND_PICKAXE, Amount:1, EFFICIENCY:5, DURABILITY:3, FORTUNE:3
+      Messages: '&7Büyülü Kazma (V5,K3,S3) &akazandınız!'
+    '28':
+      DisplayName: '&7Keskinlik 5 Ganimet 3 Kılıç'
+      Lore:
+      - '&7Keskinlik V'
+      - '&7Ganimet III'
+      DisplayItem: DIAMOND_SWORD
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4250
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:DIAMOND_SWORD, Amount:1, DAMAGE_ALL:4, LOOT_BONUS_MOBS:3
+      Messages: '&7Keskinlik 5 Ganimet 3 Kılıç &akazandınız!'
+    '29':
+      DisplayName: '&764x Büyülü Altın Elma'
+      DisplayItem: GOLDEN_APPLE:1
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4250
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:GOLDEN_APPLE:1, Amount:64
+      Messages: '&764x Büyülü Altın Elma &akazandınız!'
+    '30':
+      DisplayName: '&71.000.000 TL Para'
+      DisplayItem: GOLD_INGOT
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4250
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - eco give %Player% 1000000
+      Items: []
+      Messages: '&71.000.000 TL Para &akazandınız!'
+    '31':
+      DisplayName: '&7Koruma 4 Kırılmazlık 3 Set'
+      Lore:
+      - '&7Koruma IV'
+      - '&7Kırılmazlık III'
+      DisplayItem: DIAMOND_CHESTPLATE
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 3000
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands: []
+      Items:
+      - Item:DIAMOND_HELMET, Amount:1, PROTECTION:4, DURABILITY:3
+      - Item:DIAMOND_CHESTPLATE, Amount:1, PROTECTION:4, DURABILITY:3
+      - Item:DIAMOND_LEGGINGS, Amount:1, PROTECTION:4, DURABILITY:3
+      - Item:DIAMOND_BOOTS, Amount:1, PROTECTION:4, DURABILITY:3
+      Messages: '&7Koruma 4 Kırılmazlık 3 Set &akazandınız!'
+    '32':
+      DisplayName: '&6Demir Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4285
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% custom_1 1
+      Items: []
+      Messages: '&6Demir Spawner &akazandınız!'
+    '33':
+      DisplayName: '&610.000.000 TL Para'
+      DisplayItem: GOLD_INGOT
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4285
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - eco give %Player% 10000000
+      Items: []
+      Messages: '&610.000.000 TL Para &akazandınız!'
+    '34':
+      DisplayName: '&63 Puan'
+      DisplayItem: PAPER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4285
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - puan ver %Player% 3
+      Items: []
+      Messages: '&63 Puan &akazandınız!'
+    '35':
+      DisplayName: '&65 Puan'
+      DisplayItem: PAPER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4285
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - puan ver %Player% 5
+      Items: []
+      Messages: '&65 Puan &akazandınız!'
+    '36':
+      DisplayName: '&6Madencinin Savaş Kiti'
+      DisplayItem: DIAMOND_PICKAXE
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4285
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - kit Madenci %Player%
+      Items: []
+      Messages: '&6Madencinin Savaş Kiti &akazandınız!'
+    '37':
+      DisplayName: '&6UVIP+ Kiti'
+      DisplayItem: DIAMOND_SWORD
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4285
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - kit UVIP+Kasa %Player%
+      Items: []
+      Messages: '&6UVIP+ Kiti &akazandınız!'
+    '38':
+      DisplayName: '&6Yaygın Kasa Anahtarı'
+      DisplayItem: TRIPWIRE_HOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4285
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - crates give virtual yaygin 1 %Player%
+      Items: []
+      Messages: '&6Yaygın Kasa Anahtarı &akazandınız!'
+    '39':
+      DisplayName: '&5At Spawner'
+      DisplayItem: MOB_SPAWNER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4000
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - es give %Player% horse 1
+      Items: []
+      Messages: '&5At Spawner &akazandınız!'
+    '40':
+      DisplayName: '&550.000.000 TL Para'
+      DisplayItem: GOLD_INGOT
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4000
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - eco give %Player% 50000000
+      Items: []
+      Messages: '&550.000.000 TL Para &akazandınız!'
+    '41':
+      DisplayName: '&510 Puan'
+      DisplayItem: PAPER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 4000
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - puan ver %Player% 10
+      Items: []
+      Messages: '&510 Puan &akazandınız!'
+    '42':
+      DisplayName: '&5Nadir Kasa Anahtarı'
+      DisplayItem: TRIPWIRE_HOOK
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1666
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - crates give virtual nadir 1 %Player%
+      Items: []
+      Messages: '&5Nadir Kasa Anahtarı &akazandınız!'
+    '43':
+      DisplayName: '&5Edit Kazma'
+      Lore:
+      - '&7Verimlilik VIII'
+      - '&7Kırılmazlık VI'
+      - '&7Servet IV'
+      DisplayItem: DIAMOND_PICKAXE
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1666
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give editkazma %Player%
+      Items: []
+      Messages: '&5Edit Kazma &akazandınız!'
+    '44':
+      DisplayName: '&5Satış Asası'
+      DisplayItem: GOLD_HOE
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 1666
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give sellwand %Player%
+      Items: []
+      Messages: '&5Satış Asası &akazandınız!'
+    '45':
+      DisplayName: '&5Tamir Asası'
+      DisplayItem: GOLD_AXE
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 600
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give fixwand %Player%
+      Items: []
+      Messages: '&5Tamir Asası &akazandınız!'
+    '46':
+      DisplayName: '&5Edit Kılıç'
+      Lore:
+      - '&7Keskinlik VIII'
+      - '&7Darbe VI'
+      - '&7Alevden Çehre IV'
+      - '&7Ganimet V'
+      DisplayItem: DIAMOND_SWORD
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 600
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give editkilic %Player%
+      Items: []
+      Messages: '&5Edit Kılıç &akazandınız!'
+    '47':
+      DisplayName: '&5Edit Yay'
+      Lore:
+      - '&7Güç VII'
+      - '&7Yumruk III'
+      - '&7Alev II'
+      - '&7Sonsuzluk I'
+      DisplayItem: BOW
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 600
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give edityay %Player%
+      Items: []
+      Messages: '&5Edit Yay &akazandınız!'
+    '48':
+      DisplayName: '&5Satış Sandığı'
+      DisplayItem: CHEST
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 600
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give voidchest %Player%
+      Items: []
+      Messages: '&5Satış Sandığı &akazandınız!'
+    '49':
+      DisplayName: '&5Satış Hunisi'
+      DisplayItem: HOPPER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 600
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - eh give %Player% 2
+      Items: []
+      Messages: '&5Satış Hunisi &akazandınız!'

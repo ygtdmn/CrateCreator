@@ -1,0 +1,292 @@
+Items:
+  '1':
+    Name: Rejenerasyon İksiri
+    DisplayItem: POTION
+    RRL: Yaygin1
+    Rewards:
+    - Item:POTION:8257, Amount:1
+  '2':
+    Name: Hız İksiri
+    DisplayItem: POTION
+    RRL: Yaygin1
+    Rewards:
+    - Item:POTION:8226, Amount:1
+  '3':
+    Name: Patlayıcı Zehir İksiri
+    DisplayItem: POTION
+    RRL: Yaygin1
+    Rewards:
+    - Item:POTION:16420, Amount:1
+  '4':
+    Name: Anında İyileştirme İksiri
+    DisplayItem: POTION
+    RRL: Yaygin1
+    Rewards:
+    - Item:POTION:8229, Amount:1
+  '5':
+    Name: Gece Görüşü İksiri
+    DisplayItem: POTION
+    RRL: Yaygin1
+    Rewards:
+    - Item:POTION:8262, Amount:1
+  '6':
+    Name: Güç İksiri
+    DisplayItem: POTION
+    RRL: Yaygin1
+    Rewards:
+    - Item:POTION:8233, Amount:1
+  '7':
+    Name: Patlayıcı Zarar İksiri
+    DisplayItem: POTION
+    RRL: Yaygin1
+    Rewards:
+    - Item:POTION:16428, Amount:1
+  '8':
+    Name: Su Altında Nefes Alma İksiri
+    DisplayItem: POTION
+    RRL: Yaygin1
+    Rewards:
+    - Item:POTION:8269, Amount:1
+  '9':
+    Name: Koruma 4 Büyü Kitabı
+    DisplayItem: ENCHANTED_BOOK
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% ENCHANTED_BOOK 1 PROTECTION:4
+  '10':
+    Name: Keskinlik 5 Büyü Kitabı
+    DisplayItem: ENCHANTED_BOOK
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% ENCHANTED_BOOK 1 DAMAGE_ALL:5
+  '11':
+    Name: Dikenler 3 Büyü Kitabı
+    DisplayItem: ENCHANTED_BOOK
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% ENCHANTED_BOOK 1 THORNS:3
+  '12':
+    Name: Darbe 5 Büyü Kitabı
+    DisplayItem: ENCHANTED_BOOK
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% ENCHANTED_BOOK 1 DAMAGE_UNDEAD:5
+  '13':
+    Name: Kırılmazlık 3 Büyü Kitabı
+    DisplayItem: ENCHANTED_BOOK
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% ENCHANTED_BOOK 1 DURABILITY:3
+  '14':
+    Name: Savurma 2 Büyü Kitabı
+    DisplayItem: ENCHANTED_BOOK
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% ENCHANTED_BOOK 1 KNOCKBACK:2
+  '15':
+    Name: Ganimet 3 Büyü Kitabı
+    DisplayItem: ENCHANTED_BOOK
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% ENCHANTED_BOOK 1 LOOT_BONUS_MOBS:3
+  '16':
+    Name: Verimlilik 5 Büyü Kitabı
+    DisplayItem: ENCHANTED_BOOK
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% ENCHANTED_BOOK 1 EFFICIENCY:5
+  '17':
+    Name: Servet 3 Büyü Kitabı
+    DisplayItem: ENCHANTED_BOOK
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% ENCHANTED_BOOK 1 LOOT_BONUS_BLOCKS:3
+  '18':
+    Name: 50.000 TL Para
+    DisplayItem: GOLD_INGOT
+    RRL: Yaygin1
+    Rewards:
+    - eco give %Player% 50000
+  '19':
+    Name: 100.000 TL Para
+    DisplayItem: GOLD_INGOT
+    RRL: Yaygin1
+    Rewards:
+    - eco give %Player% 100000
+  '20':
+    Name: 150.000 TL Para
+    DisplayItem: GOLD_INGOT
+    RRL: Yaygin1
+    Rewards:
+    - eco give %Player% 150000
+  '21':
+    Name: 30 Puan
+    DisplayItem: PAPER
+    RRL: Yaygin1
+    Rewards:
+    - puan ver %Player% 30
+  '22':
+    Name: 60 Puan
+    DisplayItem: PAPER
+    RRL: Yaygin1
+    Rewards:
+    - puan ver %Player% 60
+  '23':
+    Name: 90 Puan
+    DisplayItem: PAPER
+    RRL: Yaygin1
+    Rewards:
+    - puan ver %Player% 90
+  '24':
+    Name: 1x Büyülü Altın Elma
+    DisplayItem: GOLDEN_APPLE:1
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% GOLDEN_APPLE:1 1
+  '25':
+    Name: 8x Büyülü Altın Elma
+    DisplayItem: GOLDEN_APPLE:1
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% GOLDEN_APPLE:1 8
+  '26':
+    Name: 16x Büyülü Altın Elma
+    DisplayItem: GOLDEN_APPLE:1
+    RRL: Yaygin1
+    Rewards:
+    - give %Player% GOLDEN_APPLE:1 16
+  '27':
+    Name: Verimlilik 5 Elmas Kürek
+    DisplayItem: DIAMOND_SPADE
+    RRL: Yaygin1
+    Rewards:
+    - Item:DIAMOND_SPADE, Amount:1, EFFICIENCY:5
+  '28':
+    Name: Verimlilik 5 Elmas Balta
+    DisplayItem: DIAMOND_AXE
+    RRL: Yaygin1
+    Rewards:
+    - Item:DIAMOND_AXE, Amount:1, EFFICIENCY:5
+  '29':
+    Name: Koruma 4 Elmas Kask
+    DisplayItem: DIAMOND_HELMET
+    RRL: Yaygin2
+    Rewards:
+    - Item:DIAMOND_HELMET, Amount:1, PROTECTION:4
+  '30':
+    Name: Koruma 4 Elmas Göğüslük
+    DisplayItem: DIAMOND_CHESTPLATE
+    RRL: Yaygin2
+    Rewards:
+    - Item:DIAMOND_CHESTPLATE, Amount:1, PROTECTION:4
+  '31':
+    Name: Koruma 4 Elmas Pantolon
+    DisplayItem: DIAMOND_LEGGINGS
+    RRL: Yaygin2
+    Rewards:
+    - Item:DIAMOND_LEGGINGS, Amount:1, PROTECTION:4
+  '32':
+    Name: Koruma 4 Elmas Ayakkabılar
+    DisplayItem: DIAMOND_BOOTS
+    RRL: Yaygin2
+    Rewards:
+    - Item:DIAMOND_BOOTS, Amount:1, PROTECTION:4
+  '33':
+    Name: Büyülü Elmas Kazma (Ver5,Ser3,Kır3)
+    DisplayItem: DIAMOND_PICKAXE
+    RRL: Yaygin2
+    Rewards:
+    - Item:DIAMOND_PICKAXE, Amount:1, EFFICIENCY:5, LOOT_BONUS_BLOCKS:3, DURABILITY:3
+  '34':
+    Name: Keskinlik 5 Elmas Kılıç
+    DisplayItem: DIAMOND_SWORD
+    RRL: Yaygin2
+    Rewards:
+    - Item:DIAMOND_SWORD, Amount:1, DAMAGE_ALL:5
+  '35':
+    Name: Büyülü Elmas Kılıç (Kes5,Gani3,Alev2)
+    DisplayItem: DIAMOND_SWORD
+    RRL: Yaygin2
+    Rewards:
+    - Item:DIAMOND_SWORD, Amount:1, DAMAGE_ALL:5, LOOT_BONUS_MOBS:3, FIRE_ASPECT:2
+  '36':
+    Name: Koruma 4 Elmas Set
+    DisplayItem: DIAMOND_CHESTPLATE
+    RRL: Nadir1
+    Rewards:
+    - Item:DIAMOND_HELMET, Amount:1, PROTECTION:4
+    - Item:DIAMOND_CHESTPLATE, Amount:1, PROTECTION:4
+    - Item:DIAMOND_LEGGINGS, Amount:1, PROTECTION:4
+    - Item:DIAMOND_BOOTS, Amount:1, PROTECTION:4
+  '37':
+    Name: Büyülü Elmas Set (Koruma4, Kırılmazlık3)
+    DisplayItem: DIAMOND_CHESTPLATE
+    RRL: Nadir1
+    Rewards:
+    - Item:DIAMOND_HELMET, Amount:1, PROTECTION:4, DURABILITY:3
+    - Item:DIAMOND_CHESTPLATE, Amount:1, PROTECTION:4, DURABILITY:3
+    - Item:DIAMOND_LEGGINGS, Amount:1, PROTECTION:4, DURABILITY:3
+    - Item:DIAMOND_BOOTS, Amount:1, PROTECTION:4, DURABILITY:3
+  '38':
+    Name: Efsunlanmış Elmas Set
+    DisplayItem: DIAMOND_CHESTPLATE
+    RRL: Efsanevi1
+    Rewards:
+    - uci give p5kask %Player%
+    - uci give p5zirh %Player%
+    - uci give p5pantolon %Player%
+    - uci give p5bot %Player%
+  '39':
+    Name: Nadir Koruma Efsunu
+    DisplayItem: ENCHANTED_BOOK
+    RRL: Efsanevi1
+    Rewards:
+    - uci give p5efsun %Player%
+  '40':
+    Name: Satış Asası
+    DisplayItem: GOLD_HOE
+    RRL: Efsanevi2
+    Rewards:
+    - uci give sellwand %Player%
+  '41':
+    Name: Tamir Asası
+    DisplayItem: GOLD_AXE
+    RRL: Efsanevi2
+    Rewards:
+    - uci give fixwand %Player%
+  '42':
+    Name: Büyülü Lavanor Yayı
+    DisplayItem: BOW
+    RRL: Efsanevi2
+    Rewards:
+    - uci give lavanoryayi %Player%
+  '43':
+    Name: Vaghlodar Kazması
+    DisplayItem: DIAMOND_PICKAXE
+    RRL: Efsanevi2
+    Rewards:
+    - uci give vaghlodarkazmasi %Player%
+  '44':
+    Name: Kara Büyülü Vaghlodar Kazması
+    DisplayItem: DIAMOND_PICKAXE
+    RRL: Efsanevi2
+    Rewards:
+    - uci give karabuyuluvaghlodarkazmasi %Player%
+  '45':
+    Name: Cilalı Elmas Kılıç
+    DisplayItem: DIAMOND_SWORD
+    RRL: Efsanevi2
+    Rewards:
+    - uci give cilalielmaskilic %Player%
+  '46':
+    Name: Nadir Kasa x2
+    DisplayItem: CHEST
+    RRL: Efsanevi3
+    Rewards:
+    - crates give V Nadir 2 %Player%
+  '47':
+    Name: Efsanevi Kasa
+    DisplayItem: CHEST
+    RRL: Efsanevi4
+    Rewards:
+    - crates give V Efsanevi 1 %Player%

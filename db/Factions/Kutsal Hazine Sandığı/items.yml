@@ -1,0 +1,125 @@
+Items:
+  '1':
+    Name: Efsanevi Kasa x3
+    DisplayItem: CHEST
+    RRL: Efsanevi1
+    Rewards:
+    - crates give V Efsanevi 3 %Player%
+  '2':
+    Name: Satış Hunisi x3
+    DisplayItem: HOPPER
+    RRL: Efsanevi1
+    Rewards:
+    - eh give %Player% 2
+    - eh give %Player% 2
+    - eh give %Player% 2
+  '3':
+    Name: Satış Sandığı x3
+    DisplayItem: CHEST
+    RRL: Efsanevi1
+    Rewards:
+    - uci give sellchest %Player%
+    - uci give sellchest %Player%
+    - uci give sellchest %Player%
+  '4':
+    Name: Blok Kırma Hunisi x3
+    DisplayItem: HOPPER
+    RRL: Efsanevi1
+    Rewards:
+    - eh give %Player% 3
+    - eh give %Player% 3
+    - eh give %Player% 3
+  '5':
+    Name: Pembepençe Boss Yumurtası x2
+    DisplayItem: MONSTER_EGG:90
+    RRL: Efsanevi1
+    Rewards:
+    - uci give pembepenceYumurta %Player%
+    - uci give pembepenceYumurta %Player%
+  '6':
+    Name: Vaghlodar Kazması x2
+    DisplayItem: DIAMOND_PICKAXE
+    RRL: Efsanevi1
+    Rewards:
+    - uci give vaghlodarkazmasi %Player%
+    - uci give vaghlodarkazmasi %Player%
+  '7':
+    Name: Cilalı Elmas Kılıç x2
+    DisplayItem: DIAMOND_SWORD
+    RRL: Efsanevi1
+    Rewards:
+    - uci give cilalielmaskilic %Player%
+    - uci give cilalielmaskilic %Player%
+  '8':
+    Name: Büyülü Lavanor Yayı x2
+    DisplayItem: BOW
+    RRL: Efsanevi1
+    Rewards:
+    - uci give lavanoryayi %Player%
+    - uci give lavanoryayi %Player%
+  '9':
+    Name: Kemikkıran'ın Baltası x2
+    DisplayItem: DIAMOND_AXE
+    RRL: Efsanevi1
+    Rewards:
+    - uci give kemikkiranBalta %Player%
+    - uci give kemikkiranBalta %Player%
+  '10':
+    Name: Kara Büyülü Vaghlodar Kazması x2
+    DisplayItem: DIAMOND_PICKAXE
+    RRL: Efsanevi1
+    Rewards:
+    - uci give karabuyuluvaghlodarkazmasi %Player%
+    - uci give karabuyuluvaghlodarkazmasi %Player%
+  '11':
+    Name: Uçuş Kartı
+    DisplayItem: PAPER
+    RRL: Efsanevi1
+    Rewards:
+    - uci give flyitem %Player%
+  '12':
+    Name: Büyülü Alan Kazması x2
+    DisplayItem: DIAMOND_PICKAXE
+    RRL: Efsanevi1
+    Rewards:
+    - uci give buyulualankazmasi %Player%
+    - uci give buyulualankazmasi %Player%
+  '13':
+    Name: Kemikkıran Boss Yumurtası x2
+    DisplayItem: MONSTER_EGG:91
+    RRL: Efsanevi1
+    Rewards:
+    - uci give kemikkiranYumurta %Player%
+    - uci give kemikkiranYumurta %Player%
+  '14':
+    Name: Yıkımgetiren Boss Yumurtası x2
+    DisplayItem: MONSTER_EGG:92
+    RRL: Efsanevi1
+    Rewards:
+    - uci give yikimgetirenYumurta %Player%
+    - uci give yikimgetirenYumurta %Player%
+  '15':
+    Name: Vahşi Avcı Boss Yumurtası x1
+    DisplayItem: MONSTER_EGG:93
+    RRL: Efsanevi1
+    Rewards:
+    - uci give vahsiavciYumurta %Player%
+  '16':
+    Name: Vahşi Avcı Boss Yumurtası x2
+    DisplayItem: MONSTER_EGG:93
+    RRL: Efsanevi1
+    Rewards:
+    - uci give vahsiavciYumurta %Player%
+    - uci give vahsiavciYumurta %Player%
+  '17':
+    Name: UVIP Kartı (1 aylık)
+    DisplayItem: PAPER
+    RRL: Efsanevi1
+    Rewards:
+    - uci give uvip %Player%
+  '18':
+    Name: UVIP+ Kartı (1 aylık)
+    DisplayItem: PAPER
+    RRL: Efsanevi1
+    Rewards:
+    - uci give uvipplus %Player%

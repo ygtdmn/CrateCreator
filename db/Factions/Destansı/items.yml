@@ -1,0 +1,143 @@
+Items:
+  '1':
+    Name: Satış Asası
+    DisplayItem: GOLD_HOE
+    RRL: Nadir1
+    Rewards:
+    - uci give sellwand %Player%
+  '2':
+    Name: Tamir Asası
+    DisplayItem: GOLD_AXE
+    RRL: Nadir1
+    Rewards:
+    - uci give fixwand %Player%
+  '3':
+    Name: Efsanevi Kasa x2
+    DisplayItem: CHEST
+    RRL: Nadir1
+    Rewards:
+    - crates give V Efsanevi 2 %Player%
+  '4':
+    Name: Satış Hunisi x2
+    DisplayItem: HOPPER
+    RRL: Nadir1
+    Rewards:
+    - eh give %Player% 2
+    - eh give %Player% 2
+  '5':
+    Name: Satış Sandığı x2
+    DisplayItem: CHEST
+    RRL: Nadir1
+    Rewards:
+    - uci give sellchest %Player%
+    - uci give sellchest %Player%
+  '6':
+    Name: Blok Kırma Hunisi x2
+    DisplayItem: HOPPER
+    RRL: Nadir1
+    Rewards:
+    - eh give %Player% 3
+    - eh give %Player% 3
+  '7':
+    Name: Pembepençe Boss Yumurtası
+    DisplayItem: MONSTER_EGG:90
+    RRL: Nadir1
+    Rewards:
+    - uci give pembepenceYumurta %Player%
+  '8':
+    Name: Pembepençe Boss Yumurtası x2
+    DisplayItem: MONSTER_EGG:90
+    RRL: Nadir1
+    Rewards:
+    - uci give pembepenceYumurta %Player%
+    - uci give pembepenceYumurta %Player%
+  '9':
+    Name: Vaghlodar Kazması
+    DisplayItem: DIAMOND_PICKAXE
+    RRL: Nadir2
+    Rewards:
+    - uci give vaghlodarkazmasi %Player%
+  '10':
+    Name: Cilalı Elmas Kılıç
+    DisplayItem: DIAMOND_SWORD
+    RRL: Nadir2
+    Rewards:
+    - uci give cilalielmaskilic %Player%
+  '11':
+    Name: Büyülü Lavanor Yayı
+    DisplayItem: BOW
+    RRL: Nadir2
+    Rewards:
+    - uci give lavanoryayi %Player%
+  '12':
+    Name: Kemikkıran'ın Baltası
+    DisplayItem: DIAMOND_AXE
+    RRL: Nadir2
+    Rewards:
+    - uci give kemikkiranBalta %Player%
+  '13':
+    Name: Kara Büyülü Vaghlodar Kazması
+    DisplayItem: DIAMOND_PICKAXE
+    RRL: Nadir2
+    Rewards:
+    - uci give karabuyuluvaghlodarkazmasi %Player%
+  '14':
+    Name: Büyülü Şans Kasası
+    DisplayItem: CHEST
+    RRL: Nadir2
+    Rewards:
+    - crates give V BuyuluSansKasasi 1 %Player%
+  '15':
+    Name: Uçuş Kartı
+    DisplayItem: PAPER
+    RRL: Efsanevi1
+    Rewards:
+    - uci give flyitem %Player%
+  '16':
+    Name: Büyülü Alan Kazması
+    DisplayItem: DIAMOND_PICKAXE
+    RRL: Efsanevi1
+    Rewards:
+    - uci give buyulualankazmasi %Player%
+  '17':
+    Name: Kemikkıran Boss Yumurtası
+    DisplayItem: MONSTER_EGG:91
+    RRL: Efsanevi1
+    Rewards:
+    - uci give kemikkiranYumurta %Player%
+  '18':
+    Name: Yıkımgetiren Boss Yumurtası
+    DisplayItem: MONSTER_EGG:92
+    RRL: Efsanevi1
+    Rewards:
+    - uci give yikimgetirenYumurta %Player%
+  '19':
+    Name: Vahşi Avcı Boss Yumurtası
+    DisplayItem: MONSTER_EGG:93
+    RRL: Efsanevi1
+    Rewards:
+    - uci give vahsiavciYumurta %Player%
+  '20':
+    Name: VIP Kartı (1 aylık)
+    DisplayItem: PAPER
+    RRL: Efsanevi1
+    Rewards:
+    - uci give vip %Player%
+  '21':
+    Name: VIP+ Kartı (1 aylık)
+    DisplayItem: PAPER
+    RRL: Efsanevi1
+    Rewards:
+    - uci give vipplus %Player%
+  '22':
+    Name: UVIP Kartı (1 aylık)
+    DisplayItem: PAPER
+    RRL: Efsanevi1
+    Rewards:
+    - uci give uvip %Player%
+  '23':
+    Name: UVIP+ Kartı (1 aylık)
+    DisplayItem: PAPER
+    RRL: Efsanevi1
+    Rewards:
+    - uci give uvipplus %Player%

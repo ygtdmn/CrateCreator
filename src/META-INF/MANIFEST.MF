@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: miglayout-core.jar miglayout-swing.jar jgoodies-looks-2.7.
+ 0.jar jgoodies-common-1.8.1.jar h2-1.4.197.jar
+Main-Class: me.uniodex.CrateCreator
+

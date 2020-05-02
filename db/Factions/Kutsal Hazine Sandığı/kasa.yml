@@ -1,0 +1,308 @@
+Crate:
+  CrateType: Wonder
+  CrateName: '&4&l➸ &4&lKutsal Hazine Sandığı'
+  Preview-Name: '&4&l➸ &4&lKutsal Hazine Sandığı'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 34
+  OpeningBroadCast: true
+  BroadCast: '&b&lUNIOCRAFT &2-> &a%Player% &7bir &4&lKutsal Hazine Sandığı&7 açıyor!'
+  Item: CHEST
+  Glowing: false
+  Name: '&4&lKutsal Hazine Sandığı'
+  Lore:
+  - '&7Kutsal Hazine Sandığı bir özel kasadır.'
+  - '&7Bu kasanın içindeki tüm eşyalar'
+  - '&7özel eşyalardır ve normal eşya'
+  - '&7düşme şansı yoktur.'
+  - ' '
+  - '&7Kutsal Hazine Sandığı oyundaki en değerli'
+  - '&7kasadır. Bu kasadan çıkabilecek tüm eşyaların'
+  - '&7şansı eşit olarak ayarlanmıştır. Dolayısıyla'
+  - '&7bu kasa tamamen sizin şansınıza bağlıdır.'
+  - ' '
+  - '&7Satın almak için:'
+  - '&buniocraft.com/market'
+  - ''
+  - '&aSahip Olduğunuz Kasa: &f%Keys%'
+  - ' '
+  - '&7(&e!&7) Kasayı açmak için Sol Tıkla!'
+  - '&7(&e!&7) Ödülleri görmek için Sağ Tıkla!'
+  Preview:
+    Toggle: true
+    ChestLines: 6
+    Glass:
+      Toggle: true
+      Item: STAINED_GLASS_PANE:7
+  PhysicalKey:
+    Name: '&4&lKutsal Hazine Sandığı'
+    Item: TRIPWIRE_HOOK
+  Prizes:
+    '1':
+      DisplayName: '&5Efsanevi Kasa x3'
+      DisplayItem: CHEST
+      DisplayAmount: 3
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - crates give V Efsanevi 3 %Player%
+      Items: []
+      Messages: '&5Efsanevi Kasa x3 &akazandınız!'
+    '2':
+      DisplayName: '&5Satış Hunisi x3'
+      DisplayItem: HOPPER
+      DisplayAmount: 3
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - eh give %Player% 2
+      - eh give %Player% 2
+      - eh give %Player% 2
+      Items: []
+      Messages: '&5Satış Hunisi x3 &akazandınız!'
+    '3':
+      DisplayName: '&5Satış Sandığı x3'
+      DisplayItem: CHEST
+      DisplayAmount: 3
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give sellchest %Player%
+      - uci give sellchest %Player%
+      - uci give sellchest %Player%
+      Items: []
+      Messages: '&5Satış Sandığı x3 &akazandınız!'
+    '4':
+      DisplayName: '&5Blok Kırma Hunisi x3'
+      DisplayItem: HOPPER
+      DisplayAmount: 3
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - eh give %Player% 3
+      - eh give %Player% 3
+      - eh give %Player% 3
+      Items: []
+      Messages: '&5Blok Kırma Hunisi x3 &akazandınız!'
+    '5':
+      DisplayName: '&5Pembepençe Boss Yumurtası x2'
+      DisplayItem: MONSTER_EGG:90
+      DisplayAmount: 2
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give pembepenceYumurta %Player%
+      - uci give pembepenceYumurta %Player%
+      Items: []
+      Messages: '&5Pembepençe Boss Yumurtası x2 &akazandınız!'
+    '6':
+      DisplayName: '&5Vaghlodar Kazması x2'
+      DisplayItem: DIAMOND_PICKAXE
+      DisplayAmount: 2
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give vaghlodarkazmasi %Player%
+      - uci give vaghlodarkazmasi %Player%
+      Items: []
+      Messages: '&5Vaghlodar Kazması x2 &akazandınız!'
+    '7':
+      DisplayName: '&5Cilalı Elmas Kılıç x2'
+      DisplayItem: DIAMOND_SWORD
+      DisplayAmount: 2
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give cilalielmaskilic %Player%
+      - uci give cilalielmaskilic %Player%
+      Items: []
+      Messages: '&5Cilalı Elmas Kılıç x2 &akazandınız!'
+    '8':
+      DisplayName: '&5Büyülü Lavanor Yayı x2'
+      DisplayItem: BOW
+      DisplayAmount: 2
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give lavanoryayi %Player%
+      - uci give lavanoryayi %Player%
+      Items: []
+      Messages: '&5Büyülü Lavanor Yayı x2 &akazandınız!'
+    '9':
+      DisplayName: '&5Kemikkıran''ın Baltası x2'
+      DisplayItem: DIAMOND_AXE
+      DisplayAmount: 2
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give kemikkiranBalta %Player%
+      - uci give kemikkiranBalta %Player%
+      Items: []
+      Messages: '&5Kemikkıran''ın Baltası x2 &akazandınız!'
+    '10':
+      DisplayName: '&5Kara Büyülü Vaghlodar Kazması x2'
+      DisplayItem: DIAMOND_PICKAXE
+      DisplayAmount: 2
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give karabuyuluvaghlodarkazmasi %Player%
+      - uci give karabuyuluvaghlodarkazmasi %Player%
+      Items: []
+      Messages: '&5Kara Büyülü Vaghlodar Kazması x2 &akazandınız!'
+    '11':
+      DisplayName: '&5Uçuş Kartı'
+      DisplayItem: PAPER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give flyitem %Player%
+      Items: []
+      Messages: '&5Uçuş Kartı &akazandınız!'
+    '12':
+      DisplayName: '&5Büyülü Alan Kazması x2'
+      DisplayItem: DIAMOND_PICKAXE
+      DisplayAmount: 2
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: true
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give buyulualankazmasi %Player%
+      - uci give buyulualankazmasi %Player%
+      Items: []
+      Messages: '&5Büyülü Alan Kazması x2 &akazandınız!'
+    '13':
+      DisplayName: '&5Kemikkıran Boss Yumurtası x2'
+      DisplayItem: MONSTER_EGG:91
+      DisplayAmount: 2
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give kemikkiranYumurta %Player%
+      - uci give kemikkiranYumurta %Player%
+      Items: []
+      Messages: '&5Kemikkıran Boss Yumurtası x2 &akazandınız!'
+    '14':
+      DisplayName: '&5Yıkımgetiren Boss Yumurtası x2'
+      DisplayItem: MONSTER_EGG:92
+      DisplayAmount: 2
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give yikimgetirenYumurta %Player%
+      - uci give yikimgetirenYumurta %Player%
+      Items: []
+      Messages: '&5Yıkımgetiren Boss Yumurtası x2 &akazandınız!'
+    '15':
+      DisplayName: '&5Vahşi Avcı Boss Yumurtası x1'
+      DisplayItem: MONSTER_EGG:93
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give vahsiavciYumurta %Player%
+      Items: []
+      Messages: '&5Vahşi Avcı Boss Yumurtası x1 &akazandınız!'
+    '16':
+      DisplayName: '&5Vahşi Avcı Boss Yumurtası x2'
+      DisplayItem: MONSTER_EGG:93
+      DisplayAmount: 2
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give vahsiavciYumurta %Player%
+      - uci give vahsiavciYumurta %Player%
+      Items: []
+      Messages: '&5Vahşi Avcı Boss Yumurtası x2 &akazandınız!'
+    '17':
+      DisplayName: '&5UVIP Kartı (1 aylık)'
+      DisplayItem: PAPER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give uvip %Player%
+      Items: []
+      Messages: '&5UVIP Kartı (1 aylık) &akazandınız!'
+    '18':
+      DisplayName: '&5UVIP+ Kartı (1 aylık)'
+      DisplayItem: PAPER
+      DisplayAmount: 1
+      MaxRange: 100000
+      Chance: 5555
+      Firework: false
+      Glowing: false
+      Player: ''
+      Unbreakable: false
+      Commands:
+      - uci give uvipplus %Player%
+      Items: []
+      Messages: '&5UVIP+ Kartı (1 aylık) &akazandınız!'
