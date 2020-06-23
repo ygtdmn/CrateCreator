@@ -96,7 +96,7 @@ public class DBManager {
 
     public void saveDefaultConfig() {
         File dbDirectory = new File("CrateCreator/db");
-        dbDirectory.mkdir();
+        dbDirectory.mkdirs();
 
         File crateFile = new File("CrateCreator/db/crate.yml");
         if (!crateFile.exists()) {
