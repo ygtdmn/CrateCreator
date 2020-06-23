@@ -2,7 +2,7 @@ package me.uniodex.managers;
 
 import me.uniodex.CrateCreator;
 import me.uniodex.objects.Item;
-import org.bukkit.configuration.file.FileConfiguration;
+import me.uniodex.utils.config.FileConfiguration;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -4,7 +4,7 @@ import me.uniodex.CrateCreator;
 import me.uniodex.objects.Item;
 import me.uniodex.objects.RRL;
 import me.uniodex.utils.Utils;
-import org.bukkit.configuration.file.FileConfiguration;
+import me.uniodex.utils.config.FileConfiguration;
 
 import java.util.ArrayList;
 import java.util.List;

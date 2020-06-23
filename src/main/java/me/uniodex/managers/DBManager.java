@@ -1,10 +1,9 @@
 package me.uniodex.managers;
 
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
+import me.uniodex.utils.config.FileConfiguration;
+import me.uniodex.utils.config.YamlConfiguration;
 
 import java.io.*;
-import java.nio.channels.FileChannel;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
@@ -65,49 +64,6 @@ public class DBManager {
         }
     }
 
-    public void deleteFile(File path) {
-        if (path.exists()) {
-            for (File f : path.listFiles()) {
-                if (f.isDirectory()) deleteFile(f);
-                else f.delete();
-            }
-        }
-        path.delete();
-    }
-
-    public void copyFile(File source, File target) {
-        try {
-            if (source.isDirectory()) {
-                if (!target.exists()) target.mkdirs();
-                String files[] = source.list();
-                for (String file : files) {
-                    File srcFile = new File(source, file);
-                    File destFile = new File(target, file);
-                    copyFile(srcFile, destFile);
-                }
-
-            } else {
-                FileInputStream inputStream = new FileInputStream(source);
-                FileOutputStream outputStream = new FileOutputStream(target);
-                FileChannel inChannel = inputStream.getChannel();
-                FileChannel outChannel = outputStream.getChannel();
-                try {
-                    inChannel.transferTo(0, inChannel.size(), outChannel);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } finally {
-                    if (inChannel != null) inChannel.close();
-                    if (outChannel != null) outChannel.close();
-                    inputStream.close();
-                    outputStream.close();
-                }
-            }
-        } catch (IOException e) {
-            System.out.println("Failed to copy! Exception: " + e);
-            e.printStackTrace();
-        }
-    }
-
     public void reloadConfig(String fileName) {
         File initialFile = new File("db/" + fileName);
         InputStream inputStream = null;
@@ -129,14 +85,6 @@ public class DBManager {
         }
     }
 
-    public long getSize(File file) {
-        long length = 0;
-        if (file.isDirectory()) {
-            for (String f : file.list()) length += getSize(new File(file, f));
-        } else length = file.length();
-        return length;
-    }
-
     public void saveDefaultConfig() {
         File dbDirectory = new File("db");
         dbDirectory.mkdir();
@@ -155,7 +103,6 @@ public class DBManager {
         if (!rrlsFile.exists()) {
             copy(getClass().getResourceAsStream("/db/rrls.yml"), "db/rrls.yml");
         }
-
     }
 
     public static void copy(InputStream source, String destination) {
