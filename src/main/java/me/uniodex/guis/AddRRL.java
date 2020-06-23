@@ -10,8 +10,6 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
 /**
  * @author Yigit Duman
@@ -41,9 +39,6 @@ public class AddRRL extends JDialog {
         }
     }
 
-    private void button1MouseReleased(MouseEvent e) {
-        // TODO Delete this. Added accidentally.
-    }
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
@@ -81,12 +76,6 @@ public class AddRRL extends JDialog {
 
         //---- button1 ----
         button1.setText("Add RRL");
-        button1.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseReleased(MouseEvent e) {
-                button1MouseReleased(e);
-            }
-        });
         button1.addActionListener(e -> button1ActionPerformed(e));
         contentPane.add(button1, "cell 0 4 3 1");
         pack();

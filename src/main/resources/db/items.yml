@@ -1,0 +1,19 @@
+Items:
+  '1':
+    Name: Sell Wand
+    DisplayItem: GOLD_HOE
+    RRL: Rare1
+    Rewards:
+    - givesellwand %Player%
+  '2':
+    Name: Legendary Crate x3
+    DisplayItem: CHEST
+    RRL: Rare2
+    Rewards:
+    - crates give V Legendary 3 %Player%
+  '3':
+    Name: Fly Card
+    DisplayItem: PAPER
+    RRL: Legendary1
+    Rewards:
+    - giveflyitem %Player%

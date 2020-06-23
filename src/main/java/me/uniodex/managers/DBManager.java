@@ -13,6 +13,8 @@ public class DBManager {
     private Map<String, FileConfiguration> configurations = new HashMap<>();
 
     public DBManager() {
+        saveDefaultConfig();
+
         registerConfig("items.yml");
         registerConfig("rrls.yml");
         registerConfig("crate.yml");
@@ -130,6 +132,44 @@ public class DBManager {
             for (String f : file.list()) length += getSize(new File(file, f));
         } else length = file.length();
         return length;
+    }
+
+    public void saveDefaultConfig() {
+        File dbDirectory = new File("db");
+        dbDirectory.mkdir();
+
+        File defaultCrateFile = new File(getClass().getClassLoader().getResource("db/crate.yml").getFile());
+        File defaultItemsFile = new File(getClass().getClassLoader().getResource("db/items.yml").getFile());
+        File defaultRRLsFile = new File(getClass().getClassLoader().getResource("db/rrls.yml").getFile());
+
+        try {
+            File crateFile = new File("db/crate.yml");
+            if (!crateFile.exists()) {
+                copyFileUsingStream(defaultCrateFile, crateFile);
+            }
+
+            File itemsFile = new File("db/items.yml");
+            if (!itemsFile.exists()) {
+                copyFileUsingStream(defaultItemsFile, itemsFile);
+            }
+
+            File rrlsFile = new File("db/crate.yml");
+            if (!rrlsFile.exists()) {
+                copyFileUsingStream(defaultRRLsFile, rrlsFile);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void copyFileUsingStream(File source, File dest) throws IOException {
+        try (InputStream is = new FileInputStream(source); OutputStream os = new FileOutputStream(dest)) {
+            byte[] buffer = new byte[1024];
+            int length;
+            while ((length = is.read(buffer)) > 0) {
+                os.write(buffer, 0, length);
+            }
+        }
     }
 
 }

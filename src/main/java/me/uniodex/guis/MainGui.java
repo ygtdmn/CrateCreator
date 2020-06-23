@@ -13,8 +13,6 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 /*
  * Created by JFormDesigner on Mon Feb 11 20:10:54 EET 2019
@@ -63,10 +61,6 @@ public class MainGui extends JPanel {
     private JButton button10;
     public MainGui() {
         initComponents();
-    }
-
-    private void addItemButton(MouseEvent e) {
-        //TODO Delet this!1
     }
 
     private void addRRLButtonAction(ActionEvent e) {
@@ -314,12 +308,6 @@ public class MainGui extends JPanel {
 
                 //---- button1 ----
                 button1.setText("Add Item");
-                button1.addMouseListener(new MouseAdapter() {
-                    @Override
-                    public void mouseClicked(MouseEvent e) {
-                        addItemButton(e);
-                    }
-                });
                 button1.addActionListener(e -> button1ActionPerformed(e));
                 addItems.add(button1, "cell 0 7");
 

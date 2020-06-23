@@ -102,10 +102,6 @@ public class AddItem extends JDialog {
         }
     }
 
-    private void onRewardInput(MouseEvent e) {
-        //TODO Delet this!1
-    }
-
     private void textField3FocusGained(FocusEvent e) {
         if (this.textField3.getText().toString().equalsIgnoreCase("Press enter to add reward")) {
             this.textField3.setText("");
@@ -177,12 +173,6 @@ public class AddItem extends JDialog {
             @Override
             public void keyPressed(KeyEvent e) {
                 onAddReward(e);
-            }
-        });
-        textField3.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mousePressed(MouseEvent e) {
-                onRewardInput(e);
             }
         });
         textField3.addFocusListener(new FocusAdapter() {

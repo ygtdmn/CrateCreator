@@ -1,0 +1,26 @@
+Crate:
+  CrateType: Wonder
+  CrateName: '&4&l➸ &5&lLegendary Crate'
+  Preview-Name: '&4&l➸ &5&lLegendary Crate'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 30
+  OpeningBroadCast: true
+  BroadCast: '&b&lCRATES &2-> &a%Player% &7is opening a &5&lLegendary Crate&7!'
+  Item: CHEST
+  Glowing: false
+  Name: '&5&lLegendary Crate'
+  Lore:
+  - '&aKeys You Own: &f%Keys%'
+  - ' '
+  - '&7(&e!&7) To open left click!'
+  - '&7(&e!&7) To see reward right click!'
+  Preview:
+    Toggle: true
+    ChestLines: 6
+    Glass:
+      Toggle: true
+      Item: STAINED_GLASS_PANE:7
+  PhysicalKey:
+    Name: '&5&lLegendary Crate'
+    Item: TRIPWIRE_HOOK
