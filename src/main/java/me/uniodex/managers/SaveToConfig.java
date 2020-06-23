@@ -57,7 +57,8 @@ public class SaveToConfig {
                 crateConfig.set("Crate.Prizes." + itemId + ".Items", itemlist);
                 crateConfig.set("Crate.Prizes." + itemId + ".Commands", commandlist);
             }
-            crateConfig.set("Crate.Prizes." + itemId + ".Messages", RRLManager.getColor(item.getRRL().getName()) + item.getName() + " &akazandınız!");
+            // TODO Don't hardcode it.
+            crateConfig.set("Crate.Prizes." + itemId + ".Messages", "&aYou won &r" + RRLManager.getColor(item.getRRL().getName()) + item.getName() + "&a!");
             itemId++;
         }
 

@@ -5,6 +5,9 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.*;
 import java.nio.channels.FileChannel;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -138,38 +141,28 @@ public class DBManager {
         File dbDirectory = new File("db");
         dbDirectory.mkdir();
 
-        File defaultCrateFile = new File(getClass().getClassLoader().getResource("db/crate.yml").getFile());
-        File defaultItemsFile = new File(getClass().getClassLoader().getResource("db/items.yml").getFile());
-        File defaultRRLsFile = new File(getClass().getClassLoader().getResource("db/rrls.yml").getFile());
+        File crateFile = new File("db/crate.yml");
+        if (!crateFile.exists()) {
+            copy(getClass().getResourceAsStream("/db/crate.yml"), "db/crate.yml");
+        }
 
+        File itemsFile = new File("db/items.yml");
+        if (!itemsFile.exists()) {
+            copy(getClass().getResourceAsStream("/db/items.yml"), "db/items.yml");
+        }
+
+        File rrlsFile = new File("db/rrls.yml");
+        if (!rrlsFile.exists()) {
+            copy(getClass().getResourceAsStream("/db/rrls.yml"), "db/rrls.yml");
+        }
+
+    }
+
+    public static void copy(InputStream source, String destination) {
         try {
-            File crateFile = new File("db/crate.yml");
-            if (!crateFile.exists()) {
-                copyFileUsingStream(defaultCrateFile, crateFile);
-            }
-
-            File itemsFile = new File("db/items.yml");
-            if (!itemsFile.exists()) {
-                copyFileUsingStream(defaultItemsFile, itemsFile);
-            }
-
-            File rrlsFile = new File("db/crate.yml");
-            if (!rrlsFile.exists()) {
-                copyFileUsingStream(defaultRRLsFile, rrlsFile);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
+            Files.copy(source, Paths.get(destination), StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
     }
-
-    private void copyFileUsingStream(File source, File dest) throws IOException {
-        try (InputStream is = new FileInputStream(source); OutputStream os = new FileOutputStream(dest)) {
-            byte[] buffer = new byte[1024];
-            int length;
-            while ((length = is.read(buffer)) > 0) {
-                os.write(buffer, 0, length);
-            }
-        }
-    }
-
 }
