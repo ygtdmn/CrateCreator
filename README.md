@@ -1,5 +1,5 @@
 # CrateCreator
-This is a Java Desktop Application to create crates easily for CrazyCrates plugin.
+This is a Java desktop application to create crates easily for CrazyCrates plugin.
 
 It's initially made for personal usage so it's not well documented. You can open issue if you need help.
 
