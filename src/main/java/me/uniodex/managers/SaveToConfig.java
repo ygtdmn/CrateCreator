@@ -57,8 +57,10 @@ public class SaveToConfig {
                 crateConfig.set("Crate.Prizes." + itemId + ".Items", itemlist);
                 crateConfig.set("Crate.Prizes." + itemId + ".Commands", commandlist);
             }
-            // TODO Don't hardcode it.
-            crateConfig.set("Crate.Prizes." + itemId + ".Messages", "&aYou won &r" + RRLManager.getColor(item.getRRL().getName()) + item.getName() + "&a!");
+
+            FileConfiguration config = CrateCreator.dbManager.getMainConfig();
+            String wonMessage = config.getString("wonMessage").replaceAll("%item%", RRLManager.getColor(item.getRRL().getName()) + item.getName());
+            crateConfig.set("Crate.Prizes." + itemId + ".Messages", wonMessage);
             itemId++;
         }
 

@@ -3,6 +3,7 @@ package me.uniodex.managers;
 import me.uniodex.CrateCreator;
 import me.uniodex.objects.Item;
 import me.uniodex.objects.RRL;
+import me.uniodex.utils.config.FileConfiguration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -86,15 +87,12 @@ public class RRLManager {
     }
 
     public static String getColor(String rrl) {
-        // TODO Don't hardcode these.
-        if (rrl.startsWith("Common")) {
-            return "&7";
-        }
-        if (rrl.startsWith("Rare")) {
-            return "&6";
-        }
-        if (rrl.startsWith("Legendary")) {
-            return "&5";
+
+        FileConfiguration config = CrateCreator.dbManager.getMainConfig();
+        for (String color : config.getConfigurationSection("colors").getKeys(false)) {
+            if (rrl.startsWith(color)) {
+                return config.getString("colors." + color);
+            }
         }
         return null;
     }

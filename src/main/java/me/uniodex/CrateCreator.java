@@ -10,9 +10,6 @@ import me.uniodex.managers.RRLManager;
 import javax.swing.*;
 
 public class CrateCreator {
-
-    //TODO Load items and rrls from file and update MainGui
-
     public static JFrame frame;
     public static MainGui mainGui;
     public static DBManager dbManager;

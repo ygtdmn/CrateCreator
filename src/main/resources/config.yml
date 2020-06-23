@@ -1,0 +1,5 @@
+wonMessage: "&aYou won &r%item%&a!"
+colors:
+  Common: '&7'
+  Rare: '&6'
+  Legendary: '&5'

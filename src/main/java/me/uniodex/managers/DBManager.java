@@ -17,9 +17,10 @@ public class DBManager {
     public DBManager() {
         saveDefaultConfig();
 
-        registerConfig("items.yml");
-        registerConfig("rrls.yml");
-        registerConfig("crate.yml");
+        registerConfig("db/items.yml");
+        registerConfig("db/rrls.yml");
+        registerConfig("db/crate.yml");
+        registerConfig("config.yml");
 
         for (String fileName : configurations.keySet()) {
             reloadConfig(fileName);
@@ -29,43 +30,51 @@ public class DBManager {
     }
 
     public FileConfiguration getItemsConfig() {
-        return configurations.get("items.yml");
+        return configurations.get("db/items.yml");
     }
 
     public FileConfiguration getRrlsConfig() {
-        return configurations.get("rrls.yml");
+        return configurations.get("db/rrls.yml");
     }
 
     public FileConfiguration getCrateConfig() {
-        return configurations.get("crate.yml");
+        return configurations.get("db/crate.yml");
+    }
+
+    public FileConfiguration getMainConfig() {
+        return configurations.get("config.yml");
     }
 
     public void saveItemsConfig() {
-        saveConfig("items.yml");
+        saveConfig("db/items.yml");
     }
 
     public void saveRrlsConfig() {
-        saveConfig("rrls.yml");
+        saveConfig("db/rrls.yml");
     }
 
     public void saveCrateConfig() {
-        saveConfig("crate.yml");
+        saveConfig("db/crate.yml");
+    }
+
+    public void saveMainConfig() {
+        saveConfig("config.yml");
     }
 
     public void registerConfig(String name) {
-        configurations.put(name, YamlConfiguration.loadConfiguration(new File("db/", name)));
+        configurations.put(name, YamlConfiguration.loadConfiguration(new File(name)));
     }
 
     private void saveConfig(String fileName) {
         try {
-            configurations.get(fileName).save(new File("db/", fileName));
+            configurations.get(fileName).save(new File(fileName));
         } catch (IOException ex) {
             System.out.println("Couldn't save! Exception: " + ex);
         }
     }
 
     public void reloadConfig(String fileName) {
-        File initialFile = new File("db/" + fileName);
+        File initialFile = new File(fileName);
         InputStream inputStream = null;
         try {
             inputStream = new FileInputStream(initialFile);
@@ -102,6 +111,11 @@ public class DBManager {
         File rrlsFile = new File("db/rrls.yml");
         if (!rrlsFile.exists()) {
             copy(getClass().getResourceAsStream("/db/rrls.yml"), "db/rrls.yml");
+        }
+
+        File configFile = new File("config.yml");
+        if (!configFile.exists()) {
+            copy(getClass().getResourceAsStream("/config.yml"), "config.yml");
         }
     }
 
