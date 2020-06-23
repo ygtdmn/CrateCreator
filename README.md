@@ -3,6 +3,8 @@ This is a Java Desktop Application to create crates easily for CrazyCrates plugi
 
 It's initially made for personal usage so it's not well documented. You can open issue if you need help.
 
+![Screenshot](https://i.imgur.com/bg1FGlN.png)
+
 # Usage
 - Download latest build from releases tab.
 - Edit the crate.yml in CrateCreator/db folder. Don't add *Prizes* section. This will be handled by CrateCreator.
