@@ -83,7 +83,7 @@ public class AddItem extends JDialog {
             if (list1.getModel() instanceof DefaultListModel) {
                 listModel = (DefaultListModel) list1.getModel();
             } else {
-                JOptionPane.showMessageDialog(CrateCreator.frame, "Ödül koymamışsınız!");
+                JOptionPane.showMessageDialog(CrateCreator.frame, "You didn't set rewards!");
                 return;
             }
 
@@ -93,7 +93,7 @@ public class AddItem extends JDialog {
             }
 
             if (RRLManager.getRRLFromString(this.textField2.getText().toString()) == null) {
-                JOptionPane.showMessageDialog(CrateCreator.frame, "Belirttiğiniz RRL bulunamadı!");
+                JOptionPane.showMessageDialog(CrateCreator.frame, "The RRL you specified does not exist!");
                 return;
             }
 

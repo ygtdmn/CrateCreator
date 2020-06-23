@@ -92,7 +92,7 @@ public class MainGui extends JPanel {
 
     private void deleteItemButton(ActionEvent e) {
         if (itemlist.isSelectionEmpty()) {
-            JOptionPane.showMessageDialog(CrateCreator.frame, "Seçili eşya yok!");
+            JOptionPane.showMessageDialog(CrateCreator.frame, "You didn't choose an item!");
             return;
         }
         ItemManager.removeItem(ItemManager.getItem(itemlist.getSelectedValue().toString()));
@@ -107,7 +107,7 @@ public class MainGui extends JPanel {
 
     private void deleteRRLActionPerformed(ActionEvent e) {
         if (rrllist.isSelectionEmpty()) {
-            JOptionPane.showMessageDialog(CrateCreator.frame, "Seçili RRL yok!");
+            JOptionPane.showMessageDialog(CrateCreator.frame, "You didn't choose an RRL!");
             return;
         }
         RRLManager.removeRRL(RRLManager.getRRL(rrllist.getSelectedValue().toString()));
@@ -128,9 +128,8 @@ public class MainGui extends JPanel {
     }
 
     private void bakeConfigButton(ActionEvent e) {
-        JOptionPane.showMessageDialog(CrateCreator.frame, "Kaydetme başladı!");
         SaveToConfig.saveToConfig();
-        JOptionPane.showMessageDialog(CrateCreator.frame, "Kaydetme tamamlandı!");
+        JOptionPane.showMessageDialog(CrateCreator.frame, "Config baked! You can now use crate.yml in the db folder with CrazyCrates!");
     }
 
     private void initComponents() {
