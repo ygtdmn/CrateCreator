@@ -83,7 +83,7 @@ public class RRLManager {
             CrateCreator.dbManager.getRrlsConfig().set(rrl.getName(), rrl.getChance());
         }
         CrateCreator.dbManager.saveRrlsConfig();
-        CrateCreator.dbManager.reloadConfig("rrls.yml");
+        CrateCreator.dbManager.reloadConfig("db/rrls.yml");
     }
 
     public static String getColor(String rrl) {

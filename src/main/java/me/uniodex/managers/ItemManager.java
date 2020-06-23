@@ -80,7 +80,7 @@ public class ItemManager {
             }
             itemsConfig.set("Items", 0);
             CrateCreator.dbManager.saveItemsConfig();
-            CrateCreator.dbManager.reloadConfig("items.yml");
+            CrateCreator.dbManager.reloadConfig("db/items.yml");
         }
 
         for (Item item : items) {

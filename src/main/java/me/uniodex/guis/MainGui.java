@@ -242,8 +242,6 @@ public class MainGui extends JPanel {
 
                 //---- button5 ----
                 button5.setText("Delete Item");
-                button5.setBackground(Color.red);
-                button5.setForeground(Color.white);
                 button5.addActionListener(e -> deleteItemButton(e));
                 addItems.add(button5, "cell 3 0");
 
@@ -318,8 +316,6 @@ public class MainGui extends JPanel {
 
                 //---- button2 ----
                 button2.setText("Delete All");
-                button2.setBackground(UIManager.getColor("OptionPane.errorDialog.titlePane.shadow"));
-                button2.setForeground(Color.white);
                 button2.addActionListener(e -> deleteAllItemsButton(e));
                 addItems.add(button2, "cell 3 7");
             }
@@ -359,8 +355,6 @@ public class MainGui extends JPanel {
 
                 //---- button6 ----
                 button6.setText("Delete RRL");
-                button6.setBackground(UIManager.getColor("OptionPane.errorDialog.titlePane.shadow"));
-                button6.setForeground(Color.white);
                 button6.addActionListener(e -> deleteRRLActionPerformed(e));
                 addRRL.add(button6, "cell 3 0");
 
@@ -407,8 +401,6 @@ public class MainGui extends JPanel {
 
                 //---- button10 ----
                 button10.setText("Delete All");
-                button10.setBackground(UIManager.getColor("OptionPane.errorDialog.titlePane.shadow"));
-                button10.setForeground(Color.white);
                 button10.addActionListener(e -> deleteAllRrlsButton(e));
                 addRRL.add(button10, "cell 3 5");
             }

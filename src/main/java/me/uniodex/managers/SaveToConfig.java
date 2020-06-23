@@ -31,7 +31,7 @@ public class SaveToConfig {
             }
             crateConfig.set("Crates.Prizes", 0);
             CrateCreator.dbManager.saveCrateConfig();
-            CrateCreator.dbManager.reloadConfig("crate.yml");
+            CrateCreator.dbManager.reloadConfig("db/crate.yml");
         }
 
         for (Item item : ItemManager.getItems()) {
@@ -65,7 +65,7 @@ public class SaveToConfig {
         }
 
         CrateCreator.dbManager.saveCrateConfig();
-        CrateCreator.dbManager.reloadConfig("crate.yml");
+        CrateCreator.dbManager.reloadConfig("db/crate.yml");
     }
 
 }

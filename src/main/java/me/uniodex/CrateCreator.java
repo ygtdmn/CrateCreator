@@ -1,6 +1,6 @@
 package me.uniodex;
 
-import com.jgoodies.looks.plastic.PlasticLookAndFeel;
+import com.formdev.flatlaf.FlatLightLaf;
 import me.uniodex.guis.MainGui;
 import me.uniodex.managers.DBManager;
 import me.uniodex.managers.GUIManager;
@@ -16,7 +16,7 @@ public class CrateCreator {
 
     public static void main(String[] args) {
         try {
-            UIManager.setLookAndFeel(new PlasticLookAndFeel());
+            UIManager.setLookAndFeel(new FlatLightLaf());
         } catch (UnsupportedLookAndFeelException e) {
             e.printStackTrace();
         }
