@@ -62,19 +62,19 @@ public class DBManager {
     }
 
     public void registerConfig(String name) {
-        configurations.put(name, YamlConfiguration.loadConfiguration(new File(name)));
+        configurations.put(name, YamlConfiguration.loadConfiguration(new File("CrateCreator/" + name)));
     }
 
     private void saveConfig(String fileName) {
         try {
-            configurations.get(fileName).save(new File(fileName));
+            configurations.get(fileName).save(new File("CrateCreator/" + fileName));
         } catch (IOException ex) {
             System.out.println("Couldn't save! Exception: " + ex);
         }
     }
 
     public void reloadConfig(String fileName) {
-        File initialFile = new File(fileName);
+        File initialFile = new File("CrateCreator/" + fileName);
         InputStream inputStream = null;
         try {
             inputStream = new FileInputStream(initialFile);
@@ -95,27 +95,27 @@ public class DBManager {
     }
 
     public void saveDefaultConfig() {
-        File dbDirectory = new File("db");
+        File dbDirectory = new File("CrateCreator/db");
         dbDirectory.mkdir();
 
-        File crateFile = new File("db/crate.yml");
+        File crateFile = new File("CrateCreator/db/crate.yml");
         if (!crateFile.exists()) {
-            copy(getClass().getResourceAsStream("/db/crate.yml"), "db/crate.yml");
+            copy(getClass().getResourceAsStream("/db/crate.yml"), "CrateCreator/db/crate.yml");
         }
 
-        File itemsFile = new File("db/items.yml");
+        File itemsFile = new File("CrateCreator/db/items.yml");
         if (!itemsFile.exists()) {
-            copy(getClass().getResourceAsStream("/db/items.yml"), "db/items.yml");
+            copy(getClass().getResourceAsStream("/db/items.yml"), "CrateCreator/db/items.yml");
         }
 
-        File rrlsFile = new File("db/rrls.yml");
+        File rrlsFile = new File("CrateCreator/db/rrls.yml");
         if (!rrlsFile.exists()) {
-            copy(getClass().getResourceAsStream("/db/rrls.yml"), "db/rrls.yml");
+            copy(getClass().getResourceAsStream("/db/rrls.yml"), "CrateCreator/db/rrls.yml");
         }
 
-        File configFile = new File("config.yml");
+        File configFile = new File("CrateCreator/config.yml");
         if (!configFile.exists()) {
-            copy(getClass().getResourceAsStream("/config.yml"), "config.yml");
+            copy(getClass().getResourceAsStream("/config.yml"), "CrateCreator/config.yml");
         }
     }
 
