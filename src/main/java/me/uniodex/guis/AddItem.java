@@ -18,11 +18,23 @@ import java.util.ArrayList;
  * @author Yigit Duman
  */
 public class AddItem extends JDialog {
+    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    // Generated using JFormDesigner Evaluation license - Yigit Duman
+    private JLabel label1;
+    private JTextField textField1;
+    private JLabel label2;
+    private JTextField textField2;
+    private JLabel displayItemLabel;
+    private JTextField displayItemField;
+    private JLabel label3;
+    private JTextField textField3;
+    private JScrollPane scrollPane1;
+    private JList list1;
+    private JButton button1;
     public AddItem(Frame owner) {
         super(owner);
         initComponents();
     }
-
     public AddItem(Dialog owner) {
         super(owner);
         initComponents();
@@ -119,25 +131,25 @@ public class AddItem extends JDialog {
         setTitle("Add Item");
         Container contentPane = getContentPane();
         contentPane.setLayout(new MigLayout(
-            "hidemode 3",
-            // columns
-            "[fill]" +
-            "[100,fill]" +
-            "[107,fill]",
-            // rows
-            "[]0" +
-            "[26]0" +
-            "[]0" +
-            "[]0" +
-            "[]0" +
-            "[]0" +
-            "[]0" +
-            "[]0" +
-            "[]" +
-            "[]" +
-            "[]0" +
-            "[]0" +
-            "[]"));
+                "hidemode 3",
+                // columns
+                "[fill]" +
+                        "[100,fill]" +
+                        "[107,fill]",
+                // rows
+                "[]0" +
+                        "[26]0" +
+                        "[]0" +
+                        "[]0" +
+                        "[]0" +
+                        "[]0" +
+                        "[]0" +
+                        "[]0" +
+                        "[]" +
+                        "[]" +
+                        "[]0" +
+                        "[]0" +
+                        "[]"));
 
         //---- label1 ----
         label1.setText("Name:");
@@ -203,19 +215,5 @@ public class AddItem extends JDialog {
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
-
-    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - Yigit Duman
-    private JLabel label1;
-    private JTextField textField1;
-    private JLabel label2;
-    private JTextField textField2;
-    private JLabel displayItemLabel;
-    private JTextField displayItemField;
-    private JLabel label3;
-    private JTextField textField3;
-    private JScrollPane scrollPane1;
-    private JList list1;
-    private JButton button1;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

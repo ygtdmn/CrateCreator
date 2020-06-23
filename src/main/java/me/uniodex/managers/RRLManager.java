@@ -66,14 +66,13 @@ public class RRLManager {
     }
 
     public static void removeRRL(RRL rrl) {
-        List<Item> items = new ArrayList(ItemManager.getItems());
+        List<Item> items = new ArrayList<>(ItemManager.getItems());
         for (Item item : items) {
             if (item.getRRL().equals(rrl)) {
                 ItemManager.removeItem(item);
             }
         }
         rrls.remove(rrl);
-        rrl = null;
         GUIManager.updateMainGui();
         reloadRRLSConfig();
     }
@@ -87,13 +86,14 @@ public class RRLManager {
     }
 
     public static String getColor(String rrl) {
-        if (rrl.startsWith("Yaygin")) {
+        // TODO Don't hardcode these.
+        if (rrl.startsWith("Common")) {
             return "&7";
         }
-        if (rrl.startsWith("Nadir")) {
+        if (rrl.startsWith("Rare")) {
             return "&6";
         }
-        if (rrl.startsWith("Efsanevi")) {
+        if (rrl.startsWith("Legendary")) {
             return "&5";
         }
         return null;

@@ -25,8 +25,19 @@ public class Item {
         this.displayItem = displayItem;
     }
 
-    public String getName() { return name; }
-    public RRL getRRL() { return rrl; }
-    public List<String> getRewards() { return rewards; }
-    public String getDisplayItem() { return displayItem; }
+    public String getName() {
+        return name;
+    }
+
+    public RRL getRRL() {
+        return rrl;
+    }
+
+    public List<String> getRewards() {
+        return rewards;
+    }
+
+    public String getDisplayItem() {
+        return displayItem;
+    }
 }

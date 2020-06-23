@@ -4,19 +4,25 @@
 
 package me.uniodex.guis;
 
-import java.awt.*;
+import net.miginfocom.swing.MigLayout;
+
 import javax.swing.*;
-import net.miginfocom.swing.*;
+import java.awt.*;
 
 /**
  * @author Yigit Duman
  */
 public class Confirmation extends JDialog {
+    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    // Generated using JFormDesigner Evaluation license - Yigit Duman
+    private JLabel label1;
+    private JButton button1;
+    private JButton button2;
+
     public Confirmation(Frame owner) {
         super(owner);
         initComponents();
     }
-
     public Confirmation(Dialog owner) {
         super(owner);
         initComponents();
@@ -32,14 +38,14 @@ public class Confirmation extends JDialog {
         //======== this ========
         Container contentPane = getContentPane();
         contentPane.setLayout(new MigLayout(
-            "hidemode 3",
-            // columns
-            "[147,fill]" +
-            "[160,fill]",
-            // rows
-            "[]0" +
-            "[9]0" +
-            "[]"));
+                "hidemode 3",
+                // columns
+                "[147,fill]" +
+                        "[160,fill]",
+                // rows
+                "[]0" +
+                        "[9]0" +
+                        "[]"));
 
         //---- label1 ----
         label1.setText("Are you sure about that?");
@@ -57,11 +63,5 @@ public class Confirmation extends JDialog {
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
-
-    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - Yigit Duman
-    private JLabel label1;
-    private JButton button1;
-    private JButton button2;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

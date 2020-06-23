@@ -6,15 +6,16 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import java.io.*;
 import java.nio.channels.FileChannel;
 import java.util.HashMap;
+import java.util.Map;
 
 public class DBManager {
 
-    private HashMap<String, FileConfiguration> configurations = new HashMap<String, FileConfiguration>();
+    private Map<String, FileConfiguration> configurations = new HashMap<>();
 
     public DBManager() {
         registerConfig("items.yml");
         registerConfig("rrls.yml");
-        registerConfig("kasa.yml");
+        registerConfig("crate.yml");
 
         for (String fileName : configurations.keySet()) {
             reloadConfig(fileName);
@@ -31,8 +32,8 @@ public class DBManager {
         return configurations.get("rrls.yml");
     }
 
-    public FileConfiguration getKasaConfig() {
-        return configurations.get("kasa.yml");
+    public FileConfiguration getCrateConfig() {
+        return configurations.get("crate.yml");
     }
 
     public void saveItemsConfig() {
@@ -43,8 +44,8 @@ public class DBManager {
         saveConfig("rrls.yml");
     }
 
-    public void saveKasaConfig() {
-        saveConfig("kasa.yml");
+    public void saveCrateConfig() {
+        saveConfig("crate.yml");
     }
 
     public void registerConfig(String name) {
@@ -103,7 +104,7 @@ public class DBManager {
     }
 
     public void reloadConfig(String fileName) {
-        File initialFile = new File("db/"+ fileName);
+        File initialFile = new File("db/" + fileName);
         InputStream inputStream = null;
         try {
             inputStream = new FileInputStream(initialFile);

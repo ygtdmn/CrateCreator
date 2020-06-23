@@ -62,7 +62,6 @@ public class ItemManager {
 
     public static void removeItem(Item item) {
         items.remove(item);
-        item = null;
         GUIManager.updateMainGui();
         reloadItemsConfig();
     }
@@ -105,7 +104,6 @@ public class ItemManager {
             }
         }
 
-        double chance = Utils.round(Double.valueOf(item.getRRL().getChance()) / Double.valueOf(totalItemsWithThisRRL), 5) * (1000);
-        return chance;
+        return Utils.round(Double.valueOf(item.getRRL().getChance()) / Double.valueOf(totalItemsWithThisRRL), 5) * (1000);
     }
 }

@@ -16,7 +16,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
-import java.util.Iterator;
 /*
  * Created by JFormDesigner on Mon Feb 11 20:10:54 EET 2019
  */
@@ -25,6 +24,43 @@ import java.util.Iterator;
  * @author Yigit Duman
  */
 public class MainGui extends JPanel {
+    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    // Generated using JFormDesigner Evaluation license - Yigit Duman
+    private JTabbedPane tabbedPane2;
+    private JPanel addItems;
+    private JLabel label1;
+    private JLabel label2;
+    private JButton button5;
+    private JScrollPane scrollPane1;
+    private JList itemlist;
+    private JLabel label3;
+    private JTextPane namePanel;
+    private JLabel label4;
+    private JTextPane rrlPanel;
+    private JLabel label6;
+    private JTextPane chancePanel;
+    private JLabel label12;
+    private JTextPane displayItemPanel;
+    private JLabel label5;
+    private JScrollPane scrollPane2;
+    private JList rewardsList;
+    private JButton button1;
+    private JButton button4;
+    private JButton button2;
+    private JPanel addRRL;
+    private JLabel label7;
+    private JLabel label8;
+    private JButton button6;
+    private JScrollPane scrollPane3;
+    private JList rrllist;
+    private JLabel label9;
+    private JTextPane rrlNamePanel;
+    private JLabel label10;
+    private JTextPane rarityLevelPanel;
+    private JLabel label11;
+    private JTextPane rrlChancePanel;
+    private JButton button7;
+    private JButton button10;
     public MainGui() {
         initComponents();
     }
@@ -41,7 +77,7 @@ public class MainGui extends JPanel {
         //Display the window.
         dialog.pack();
         dialog.setVisible(true);
-        addRRL.getLabel2().setText("Chance (Remaining: "+RRLManager.getRemainingChance()+"/100):");
+        addRRL.getLabel2().setText("Chance (Remaining: " + RRLManager.getRemainingChance() + "/100):");
     }
 
     private void button1ActionPerformed(ActionEvent e) {
@@ -148,25 +184,30 @@ public class MainGui extends JPanel {
 
         // JFormDesigner evaluation mark
         setBorder(new javax.swing.border.CompoundBorder(
-            new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-                "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-                javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
-                java.awt.Color.red), getBorder())); addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
+                new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
+                        "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
+                        javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
+                        java.awt.Color.red), getBorder()));
+        addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent e) {
+                if ("border".equals(e.getPropertyName())) throw new RuntimeException();
+            }
+        });
 
         setLayout(new MigLayout(
-            "fill,hidemode 3",
-            // columns
-            "[fill]" +
-            "[fill]" +
-            "[fill]" +
-            "[fill]" +
-            "[fill]",
-            // rows
-            "[]" +
-            "[80]" +
-            "[]" +
-            "[80]" +
-            "[80]"));
+                "fill,hidemode 3",
+                // columns
+                "[fill]" +
+                        "[fill]" +
+                        "[fill]" +
+                        "[fill]" +
+                        "[fill]",
+                // rows
+                "[]" +
+                        "[80]" +
+                        "[]" +
+                        "[80]" +
+                        "[80]"));
 
         //======== tabbedPane2 ========
         {
@@ -176,22 +217,22 @@ public class MainGui extends JPanel {
                 addItems.setMinimumSize(new Dimension(484, 550));
                 addItems.setPreferredSize(new Dimension(623, 550));
                 addItems.setLayout(new MigLayout(
-                    "hidemode 3",
-                    // columns
-                    "[147,fill]" +
-                    "[147,fill]" +
-                    "[147,fill]" +
-                    "[147,fill]",
-                    // rows
-                    "[22]0" +
-                    "[20]0" +
-                    "[13]0" +
-                    "[10]0" +
-                    "[]0" +
-                    "[5]0" +
-                    "[38]" +
-                    "[76:80]" +
-                    "[]"));
+                        "hidemode 3",
+                        // columns
+                        "[147,fill]" +
+                                "[147,fill]" +
+                                "[147,fill]" +
+                                "[147,fill]",
+                        // rows
+                        "[22]0" +
+                                "[20]0" +
+                                "[13]0" +
+                                "[10]0" +
+                                "[]0" +
+                                "[5]0" +
+                                "[38]" +
+                                "[76:80]" +
+                                "[]"));
 
                 //---- label1 ----
                 label1.setText("Items:");
@@ -301,20 +342,20 @@ public class MainGui extends JPanel {
                 addRRL.setMinimumSize(new Dimension(484, 550));
                 addRRL.setPreferredSize(new Dimension(623, 550));
                 addRRL.setLayout(new MigLayout(
-                    "hidemode 3",
-                    // columns
-                    "[147,fill]" +
-                    "[147,fill]" +
-                    "[147,fill]" +
-                    "[147,fill]",
-                    // rows
-                    "[22]0" +
-                    "[20]0" +
-                    "[13]0" +
-                    "[10]0" +
-                    "[38]" +
-                    "[76:80]" +
-                    "[]"));
+                        "hidemode 3",
+                        // columns
+                        "[147,fill]" +
+                                "[147,fill]" +
+                                "[147,fill]" +
+                                "[147,fill]",
+                        // rows
+                        "[22]0" +
+                                "[20]0" +
+                                "[13]0" +
+                                "[10]0" +
+                                "[38]" +
+                                "[76:80]" +
+                                "[]"));
 
                 //---- label7 ----
                 label7.setText("Real Rarity Levels:");
@@ -388,46 +429,7 @@ public class MainGui extends JPanel {
         add(tabbedPane2, "cell 0 1 4 1,wmin 100%,hmin 100%");
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
-
-    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - Yigit Duman
-    private JTabbedPane tabbedPane2;
-    private JPanel addItems;
-    private JLabel label1;
-    private JLabel label2;
-    private JButton button5;
-    private JScrollPane scrollPane1;
-    private JList itemlist;
-    private JLabel label3;
-    private JTextPane namePanel;
-    private JLabel label4;
-    private JTextPane rrlPanel;
-    private JLabel label6;
-    private JTextPane chancePanel;
-    private JLabel label12;
-    private JTextPane displayItemPanel;
-    private JLabel label5;
-    private JScrollPane scrollPane2;
-    private JList rewardsList;
-    private JButton button1;
-    private JButton button4;
-    private JButton button2;
-    private JPanel addRRL;
-    private JLabel label7;
-    private JLabel label8;
-    private JButton button6;
-    private JScrollPane scrollPane3;
-    private JList rrllist;
-    private JLabel label9;
-    private JTextPane rrlNamePanel;
-    private JLabel label10;
-    private JTextPane rarityLevelPanel;
-    private JLabel label11;
-    private JTextPane rrlChancePanel;
-    private JButton button7;
-    private JButton button10;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
-
 
     public JList getItemlist() {
         return itemlist;

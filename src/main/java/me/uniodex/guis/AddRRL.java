@@ -4,8 +4,6 @@
 
 package me.uniodex.guis;
 
-import me.uniodex.CrateCreator;
-import me.uniodex.managers.ItemManager;
 import me.uniodex.managers.RRLManager;
 import net.miginfocom.swing.MigLayout;
 
@@ -14,17 +12,23 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ArrayList;
 
 /**
  * @author Yigit Duman
  */
 public class AddRRL extends JDialog {
+    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+    // Generated using JFormDesigner Evaluation license - Yigit Duman
+    private JLabel label1;
+    private JTextField textField1;
+    private JLabel label2;
+    private JTextField textField2;
+    private JButton button1;
+
     public AddRRL(Frame owner) {
         super(owner);
         initComponents();
     }
-
     public AddRRL(Dialog owner) {
         super(owner);
         initComponents();
@@ -53,17 +57,17 @@ public class AddRRL extends JDialog {
         //======== this ========
         Container contentPane = getContentPane();
         contentPane.setLayout(new MigLayout(
-            "hidemode 3",
-            // columns
-            "[fill]" +
-            "[100,fill]" +
-            "[107,fill]",
-            // rows
-            "[]0" +
-            "[26]0" +
-            "[]0" +
-            "[]" +
-            "[]"));
+                "hidemode 3",
+                // columns
+                "[fill]" +
+                        "[100,fill]" +
+                        "[107,fill]",
+                // rows
+                "[]0" +
+                        "[26]0" +
+                        "[]0" +
+                        "[]" +
+                        "[]"));
 
         //---- label1 ----
         label1.setText("Name:");
@@ -89,14 +93,6 @@ public class AddRRL extends JDialog {
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
-
-    // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - Yigit Duman
-    private JLabel label1;
-    private JTextField textField1;
-    private JLabel label2;
-    private JTextField textField2;
-    private JButton button1;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 
     public JLabel getLabel2() {

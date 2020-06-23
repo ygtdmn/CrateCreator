@@ -1,7 +1,6 @@
 package me.uniodex.managers;
 
 import me.uniodex.CrateCreator;
-import me.uniodex.guis.MainGui;
 import me.uniodex.objects.Item;
 import me.uniodex.objects.RRL;
 
@@ -31,13 +30,13 @@ public class GUIManager {
             return;
         }
 
-        DefaultListModel listModel = new DefaultListModel();
+        DefaultListModel listModel = new DefaultListModel<>();
 
         for (Item item : items) {
             listModel.addElement(item.getName());
             CrateCreator.mainGui.getItemlist().setModel(listModel);
         }
-        updateSelectedItem(items.get(items.size()-1));
+        updateSelectedItem(items.get(items.size() - 1));
         if (items.size() > 0) {
             CrateCreator.mainGui.getItemlist().setSelectedIndex(items.size() - 1);
         }
@@ -63,7 +62,7 @@ public class GUIManager {
             listModel.addElement(rrl.getName());
             CrateCreator.mainGui.getRrllist().setModel(listModel);
         }
-        updateSelectedRRL(rrls.get(rrls.size()-1));
+        updateSelectedRRL(rrls.get(rrls.size() - 1));
         if (rrls.size() > 0) {
             CrateCreator.mainGui.getRrllist().setSelectedIndex(rrls.size() - 1);
         }
@@ -79,7 +78,7 @@ public class GUIManager {
             return;
         }
         CrateCreator.mainGui.getNamePanel().setText(item.getName());
-        CrateCreator.mainGui.getChancePanel().setText(""+ItemManager.calculateChance(item));
+        CrateCreator.mainGui.getChancePanel().setText("" + ItemManager.calculateChance(item));
         CrateCreator.mainGui.getRrlPanel().setText(item.getRRL().getName());
         CrateCreator.mainGui.getDisplayItemPanel().setText(item.getDisplayItem());
         updateRewards(item.getRewards());
@@ -111,12 +110,12 @@ public class GUIManager {
 
     public static void clearList(JList list) {
         DefaultListModel listModel;
-            if (list.getModel() instanceof DefaultListModel) {
-                listModel = (DefaultListModel) list.getModel();
-            }else {
-                listModel = new DefaultListModel();
-            }
+        if (list.getModel() instanceof DefaultListModel) {
+            listModel = (DefaultListModel) list.getModel();
+        } else {
+            listModel = new DefaultListModel();
+        }
 
-            listModel.clear();
+        listModel.clear();
     }
 }

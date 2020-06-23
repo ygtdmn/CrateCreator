@@ -8,7 +8,6 @@ import me.uniodex.managers.ItemManager;
 import me.uniodex.managers.RRLManager;
 
 import javax.swing.*;
-import java.io.IOException;
 
 public class CrateCreator {
 
@@ -18,7 +17,7 @@ public class CrateCreator {
     public static MainGui mainGui;
     public static DBManager dbManager;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         try {
             UIManager.setLookAndFeel(new PlasticLookAndFeel());
         } catch (UnsupportedLookAndFeelException e) {
@@ -27,30 +26,24 @@ public class CrateCreator {
 
         dbManager = new DBManager();
 
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                createAndShowGUI();
-                GUIManager.updateMainGui();
-                RRLManager.loadRRLS();
-                ItemManager.loadItems();
-            }
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            createAndShowGUI();
+            GUIManager.updateMainGui();
+            RRLManager.loadRRLS();
+            ItemManager.loadItems();
         });
     }
 
     private static void createAndShowGUI() {
-        //Make sure we have nice window decorations.
         JFrame.setDefaultLookAndFeelDecorated(true);
 
-        //Create and set up the window.
         frame = new JFrame("UnioCrateCreator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        //Add the ubiquitous "Hello World" label.
         mainGui = new MainGui();
         JPanel panel = mainGui;
         frame.getContentPane().add(panel);
 
-        //Display the window.
         frame.pack();
         frame.setVisible(true);
     }
